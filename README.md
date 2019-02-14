@@ -178,7 +178,7 @@ don't forget to install `webpack-dev-middleware` package from NPM;
 
 ### Dynamic boilerplate assets
 
-- You can use `WebAppInternals.registerBoilerplateCallback` to dynamically change the CSS and JS served to visitors via `data.js` and `data.css`. In order to use this feature with webpack, you must set `inject: false` on `HtmlWebpackPlugin` and set the environment variable `MERGE_ASSETS=true`.
+- You can use `WebAppInternals.registerBoilerplateCallback` to dynamically change the CSS and JS served to visitors via `data.js` and `data.css`. In order to use this feature with webpack, you must set `inject: false` on `HtmlWebpackPlugin` and set the environment variable `DYNAMIC_ASSETS=true`.
 
 ## Galaxy Deployment
 `meteor deploy` command doesn't set `NODE_ENV=production` environment variable. That's why, `webpack` compiler recognizes that it is still a `development` build. You have two options to fix issue;
